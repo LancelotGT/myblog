@@ -2,7 +2,8 @@ Title: GTThread
 Date: 2015-9-18 10:20
 Tags: Linux, thread
 Category: Operating Systems
-Summary: A user level thread library 
+
+This is a README file for the first lab of CS 6210 Advanced Operating Systems here at Georgia Tech.
 
 GTThread is a user level thread library.  It has similar semantics as pthread library. The library runs purely on user mode and it create multiple threads by user level context switching. The advantage of having a user level threads is that we don't need to go to kernel on every context switch. Hence user level threads are more efficient.
 
@@ -11,7 +12,7 @@ The code is hosted on `https://github.com/LancelotGT/gtthread`
 ## Semantics
 The API is very similar to pthread, except that gtthread_init(period) must be called before creating any thread, where period is the time interval in useconds between context swich. gtthread also does not have detach. All threads are joinable.
 
-## What Linux platform do I use.           
+## What Linux platform do I use.
 I am using ubuntu/trusty64 (Official Ubuntu Server 14.04 LTS builds) created by vagrant.
 
 ## How to compile the library and run my program

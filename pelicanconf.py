@@ -73,12 +73,16 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-ARTICLE_PATHS = ['posts']
-MENUITEMS = [('posts', '/'), ('cv', '/misc/resume.pdf'), ('categories', '/categories/'), ('archives', '/archives/')]
+ARTICLE_PATHS = ['articles']
+MENUITEMS = [('Articles', '/'), ('CV', '/misc/resume.pdf'), ('Categories', '/categories/'), ('Archives', '/archives/')]
 ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
 
-STATIC_PATHS = ['misc', 'img', 'extra/CNAME']
+STATIC_PATHS = ['misc', 'img', 'images', 'extra/robots.txt', 'extra/favicon.ico']
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/favicon.ico': {'path': 'favicon.ico'}
+}
 
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = [
