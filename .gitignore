@@ -1,0 +1,12 @@
+# Python
+*.py[cod]
+
+# Pelican
+*.pid
+output
+
+# Virtual environment
+pelican
+
+# OS specific
+.DS_STORE
