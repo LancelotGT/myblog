@@ -10,3 +10,6 @@ pelican
 
 # OS specific
 .DS_STORE
+
+# Makefile
+Makefile

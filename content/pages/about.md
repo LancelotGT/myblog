@@ -1,8 +1,6 @@
 Title: about
 
-<div style="text-align:center" markdown="1">
 ![Alt Text]({filename}/images/Ning.jpg)
-</div>
 
 Hello there!
 
